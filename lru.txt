@@ -1,0 +1,37 @@
+﻿import java.util.*;
+public class lru{
+    public static void main(String []args){
+        System.out.println("enter the capacity");
+        int cap=sc.nextInt();
+        System.out.println("enter the size instruction");
+        int si=sc.nextInt();
+        system.out.println("enter the pages");
+       int  arr[]=new int [si];
+       for(int i=0;i<si;i++)
+       arr[i]=sc.nextInt();
+       int count=0,pf=0;
+       ArrayList<int>s=new ArrayList<>(capacity);
+       for(int i:arr)
+       if(!s.capacity(i));
+       {
+           if(s.size()==capacity)
+           {
+               s.remove(0);
+               s.add(capacity-1,i);
+           }
+           else
+           {
+               s.add(count,i);
+               pf++;
+               ++count;
+           }
+           }
+           else if
+           {
+               s.add(s.size(),i);
+               
+           }
+       }
+       System.out.println("page faults "+pf);
+       }
+    }
